@@ -1,0 +1,129 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 600px;
+    margin: 50px auto;
+    box-sizing: border-box;
+    position: relative;
+
+}
+
+.compArea {
+    height: 250px;
+    background: linear-gradient(to bottom, rgb(77, 217, 241) 0%, rgb(101, 206, 16) 100%);
+    border-radius: 50px 50px 0 0;
+    position: relative;
+}
+
+.comp {
+    width: 70px;
+    height: 70px;
+    border: 1px solid black;
+    position: relative;
+    cursor: pointer;
+    transition: .7s;
+    display: inline-block;
+    top: 30%;
+    left: 43%;
+    border-radius: 30px;
+    background-image: url(image/question.png);
+    background-size: cover;
+    background-color: lightblue;
+}
+
+.info {
+    width: 150px;
+    height: 50px;
+    border: 1px solid lime;
+    margin: auto;
+    position: absolute;
+    background-color: lightseagreen;
+    border-radius: 50px;
+    z-index: 1;
+    top: 34.5%;
+    left: 51%;
+    margin-top: -27px;
+    margin-left: -85px;
+    text-align: center;
+    line-height: 50px;
+    font-family: jokerman;
+    font-size: 24px;
+}
+
+.playerArea {
+    height: 250px;
+    background: linear-gradient(to bottom, rgb(192, 56, 22) 0%, rgb(218, 215, 67) 100%);
+    border-radius: 0 0 50px 50px;
+    position: relative;
+}
+
+.batu,
+.gunting,
+.kertas {
+    width: 70px;
+    height: 70px;
+    border: 1px solid black;
+    position: relative;
+    cursor: pointer;
+    transition: .7s;
+    display: inline-block;
+    top: 40%;
+    left: 22%;
+    margin-right: 50px;
+    border-radius: 30px;
+}
+
+.batu {
+    background-image: url(image/batu.png);
+    background-size: cover;
+}
+
+.gunting {
+    background-image: url(image/gunting.png);
+    background-size: cover;
+}
+
+.kertas {
+    background-image: url(image/kertas.png);
+    background-size: cover;
+}
+
+.batu:hover,
+.gunting:hover,
+.kertas:hover {
+    box-shadow: 0 0 10px 5px red;
+}
+
+.batu:active,
+.gunting:active,
+.kertas:active {
+    background-color: lightcoral;
+}
+
+.papanSkor {
+    height: 250px;
+    margin: auto;
+    margin-top: 25px;
+    background-color: blueviolet;
+    border-radius: 50px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.papanSkor p,
+table {
+    font-size: 24px;
+    font-family: jokerman;
+    color: wheat;
+    line-height: 50px;
+    text-align: center;
+    display: inline-block;
+}
+
+.papanSkor td {
+    padding: 10px;
+}
