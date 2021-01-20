@@ -50,6 +50,11 @@ const div_comp = document.getElementsByClassName("comp")[0];
 
 for (let i = 0; i < data.length; i++) {
     data[i].addEventListener("mouseenter", function () {
+        div_comp.style.boxShadow = "0 0 10px 5px lime";
+        div_comp.style.backgroundColor = "gold";
+    });
+
+    data[i].addEventListener("mouseout", function () {
         div_comp.style.backgroundColor = "inherit";
         div_comp.style.boxShadow = "0 0 10px 5px white";
     });
@@ -64,8 +69,8 @@ for (let i = 0; i < data.length; i++) {
         setTimeout(function () {
             const link = "image/" + com + ".png"
             div_comp.style.backgroundImage = "url(" + link + ")";
-            div_comp.style.boxShadow = "0 0 10px 5px crimson";
-            div_comp.style.backgroundColor = "yellow";
+            div_comp.style.boxShadow = "0 0 10px 5px lightskyblue";
+            div_comp.style.backgroundColor = "#3500D3";
 
             info.innerHTML = hasil;
 
